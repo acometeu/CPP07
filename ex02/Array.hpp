@@ -47,14 +47,13 @@ public:
 };
 
 template<typename T>
-Array<T>::Array(void) : _array(new T[0]), _size(0)
+Array<T>::Array(void) : _array(new T[0]()), _size(0)
 {
-	this->_array = NULL;
 	return;
 }
 
 template<typename T>
-Array<T>::Array(unsigned int n) : _array(new T[n]), _size(n)
+Array<T>::Array(unsigned int n) : _array(new T[n]()), _size(n)
 {
 	// unsigned int i = 0;
 
@@ -63,7 +62,7 @@ Array<T>::Array(unsigned int n) : _array(new T[n]), _size(n)
 	// 	this->_array[i] = 0;
 	// 	i++;
 	// }
-	// return;
+	return;
 }
 
 template<typename T>
